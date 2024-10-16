@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+table {
+  border-collapse: separate; /* Prevent borders from collapsing */
+  border-spacing: 0; 
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Almost invisible border */
+}
+
+table th, table td {
+  border: 1px solid rgba(0, 0, 0, 0.05); /* a close to  invisible border for cells */
+  padding: 10px; /* spacing  cells */
+}
+
+/* Jade green background for table headers */
+table th {
+  background-color: #00A36C; /* Jade green color */
+}
+
+/* Add border radius only to the first and last th */
+table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+table tr:last-child td {
+  border-bottom: 3px solid #00A36C; /* will add the line after the third row*/
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 0;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 0; /* Removed the curved corner at the bottom row */
+}
+
+/*hovering*/
+table tr:hover {
+  background-color: silver; /* Change background to silver *just like we did with lists */
+}
+
+table tr:hover td {
+  font-weight: bold; /*  hovering over a row?, bolden the text */
+}
+
+
+    table,tr,th,td{
+      font-family:"Segoe UI Variable","segoe ui","sans-serif";
+      border: silver 1px solid;
+      border-collapse: collapse;
+    }
+
+    .kk{background-color:#00a86b;
+        color:white;
+    }
+
+    /*styling for the h2 element*/
+    h2{
+      background-color:cadetblue;
+      border-radius: 6px 3px 0 0;
+      border-bottom: red 2px solid;
+    }
+
+  /*  table header*/
+  th{
+    width: 20%;
+    background-color: green;
+    color: white;
+  }
+  #row2{
+    color: #00A36C; /*gives the 2nd row the jade green color*/
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+<h2>HTML Tables</h2>
+<table>
+
+
+  <tr class='kk'>
+    <th>Rank</th>
+    <th>Name</th>
+    <th>Points</th>
+    <th>Team</th>
+  </tr>
+
+
+  <tr>
+    <td>1</td>
+    <td>Domenic</td>
+    <td>88,110</td>
+    <td>dcode</td>
+  </tr>
+
+
+  <tr id='row2'>
+    <td>2</td>
+    <td>Sally</td>
+    <td>72,400</td>
+    <td>Students</td>
+  </tr>
+
+
+  <tr>
+    <td>3</td>
+    <td>Nick</td>
+    <td>52,300</td>
+    <td>dcode</td>
+  </tr>
+
+
+</table>
+
+</body>
+</html>
